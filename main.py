@@ -1,9 +1,34 @@
-number1 = int(input('Number1 для додавання: '))
-number2 = int(input('Number2 для додавання: '))
-number3 = int(input('Number3 для множення: '))
-number4 = int(input('Number4 для множення: '))
-number5 = int(input('Number5 для ділення: '))
-number6 = int(input('Number6 для ділення: '))
-number7 = int(input('Number6 для віднімання: '))
-number8 = int(input('Number6 для віднімання: '))
-print(number1 + number2, number3 * number4, number5 / number6, number7 / number8)
+[17:40] Козовий Ігор Романович
+class Student:
+    def __init__(self, name, surname, age, group, marks):
+        self.name = name
+        self.surname = surname
+        self.age = age
+        self.group = group
+        self.marks = marks
+
+    def info(self):
+        print(f"Student {self.name} {self.surname}")
+
+    def average(self):
+        return sum(self.marks) / len(self.marks)
+
+student1 = Student(
+    "Oleg",
+    "Bobko",
+    24,
+    "F18",
+    [9, 7, 2, 7, 12]
+)
+student2 = Student(
+    "Igor",
+    "Vovk",
+    28,
+    "F13",
+    [9, 12, 7, 12, 12, 5]
+)
+student1.info()
+student2.info()
+print(student1.average())
+print(student2.average())
+
